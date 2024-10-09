@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+body {
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: italic;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80vw;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* Input section */
+.input-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+#task-title, #task-desc {
+    font-family: inherit;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#task-desc {
+    resize: vertical;
+}
+
+#add-task-btn {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#add-task-btn:hover {
+    background-color: #218838;
+}
+
+/* Task list */
+#task-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task-item {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-header i {
+    margin-left: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+.task-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.task-options {
+    display: flex;
+    gap: 10px;
+}
+.task-exp-fav-options {
+    display: flex;
+    gap: 10px;
+}
+
+.task-desc {
+    margin-top: 10px;
+    display: none;
+    font-size: 14px;
+    color: #666;
+}
+
+.complete {
+    text-decoration: line-through;
+    color: #888;
+}
+
+/* Buttons */
+.complete-btn, .edit-btn, .delete-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.complete-btn.complete {
+    background-color: #6c757d;
+}
+
+.edit-btn {
+    background-color: #ffc107;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+button {
+    font-family: "Space Mono", monospace;
+
+}
+
+.important-btn {
+    margin-right: 10px;
+    color: black;
+    cursor: pointer;
+}
+
+.fa-star {
+    color: yellow;
+}
+
+/* Important Task Background */
+.task-item.important {
+    background-color: #fffae6; /* Light yellow background */
+}
+
+
